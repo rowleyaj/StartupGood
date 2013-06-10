@@ -1,0 +1,55 @@
+// Judges background images
+
+.judge{
+
+    //Create rounded rectangles
+    //Images are 300 x 300px
+    display: inline-block;
+
+    height: 225px;
+    width: 225px;
+
+    margin: 25px;
+
+    @include border-radius(150px);
+    border:solid $blue 2px;
+
+    background-image: url(../images/startupgood/judgeslogos.png);
+
+    &.unltd{
+      background-position:0px 0px;
+    }
+
+    &.thenextweb{
+      background-position:225px 0px;
+    }
+
+    &.pingit{
+      background-position:0px 225px;
+    }
+
+    &.importio{
+      background-position: 225px 225px;
+    }
+
+}
+
+.speaker{
+
+  //Create rounded rectangles
+  //Images are 300 x 300px
+
+  display: block;
+
+  height: 225px;
+  width: 225px;
+
+  margin: 25px;
+
+  @include border-radius(150px);
+  //  border:solid $blue 2px;
+
+  //background-image: url(../images/startupgood/richardreed.jpg);
+  background-position:0px 0px;
+
+}

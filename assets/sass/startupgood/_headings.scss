@@ -1,0 +1,37 @@
+// Header Tags
+
+#about h1, #speakers h1, #judges h1,
+#schedule h1, #host h1, #register h1, #photos h1{
+	display:inline-block;
+
+	background-color: $blue;
+	padding: 0 ms(0);
+	
+	padding-left: 500px;
+	margin-left: -500px;
+
+	color: #FFF;
+
+
+}
+
+#countdown h1, #faq h1, #partners h1, #twitter h1{
+	font-size:ms(3);
+
+	display:inline-block;
+
+	//background-color: $blue;
+	padding: 0 ms(0);
+	
+	//color: #FFF;
+}
+
+#about h1 {
+	color: #FFF;
+}
+
+#about, #speakers, #judges, #schedule, #host, #register, #photos,
+#countdown, #faq, #partners, #twitter {
+	background-color:lighten($lightblue,30%);
+	margin:ms(0) 0;
+} 

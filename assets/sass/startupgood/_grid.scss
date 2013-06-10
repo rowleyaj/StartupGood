@@ -1,0 +1,89 @@
+/* Create grid based on semantic elements rather than using classes */
+
+#startupgood{
+
+	div.one {
+		@include outerRow();
+	}
+	nav {
+		@include outerRow();
+	}
+}
+
+#takeover{
+	@include outerRow();
+
+	header { 
+		//@include column(9);
+	}
+
+	aside {
+		@include column(3,collapse);
+		padding-left:ms(0);
+	}
+
+	#about { 
+		@include column(9);
+	}
+
+	#speakers, #judges, #schedule, #host, #register, #photos { 
+		@include column(12);
+		div.leftcol{
+				@include column(3, collapse);
+				text-align:right;
+
+		}
+		div.rightcol{
+			@include column(9, collapse);
+			margin-top: ms(0);
+			padding-left: ms(0);
+		}
+	}
+
+	#judge{
+
+		&.unltd{
+			@include column(3);
+		} 
+		&.unltd{
+			@include column(3);
+			@include offsetBy(3);
+		} 
+		&.unltd{
+			@include column(3);
+		} 
+		&.unltd{
+			@include column(3);
+			@include offsetBy(3);
+		} 
+
+	}
+
+	#schedule{
+		.day{
+			@include column(4);
+			
+			dl{
+
+			}
+
+			dt{
+				@include column(3, collapse);
+			}
+
+			dd{
+				@include column(9, collapse);
+			}
+
+
+			&.one, &.three{
+				background-color:whitesmoke;				
+			}
+		}
+	}
+
+}
+
+#sg-footer{
+	@include outerRow();
+}

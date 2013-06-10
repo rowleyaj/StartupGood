@@ -1,0 +1,66 @@
+// Conveyor belt creation
+
+$conveyorColor:  white;
+
+#startupgood{
+	padding-bottom:2px;
+
+	h1{
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	nav{	
+		//margin: 5px;
+		//display:block;
+
+		ul.link-list{
+
+			margin-top: 10px;
+			margin-bottom:10px;
+		}
+
+		li {
+
+			font-size: 20px;
+		}
+
+		a{
+			color:white;
+			&:hover{
+				color: darken(white, 50%);
+			}
+		}
+	}
+
+	.conveyor{
+		//margin-top: 115px;
+		height: 60px;
+		display:block;
+
+		border:solid $conveyorColor 4px;
+		@include border-radius(40px);
+		margin-bottom:10px;
+	}
+
+	.circle{
+		height: 30px;
+		width: 30px;
+		vertical-align: baseline;
+
+//		.right{
+//			display:block;
+//			margin-top: -28px;
+//			bottom:20px;
+//		}
+
+		background-color: $conveyorColor;
+		margin:10px;
+		@include border-radius(15px);
+	}
+
+	.conveyor:after{
+		padding-bottom:10px;
+	}
+
+}
