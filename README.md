@@ -8,4 +8,4 @@ Built in 24 hours ready for Monday afternoon after deciding to rebrand an event 
 All logos are copyright their respective owners.
 StartupGood Logo and Lightbulb Conveyor belt logo from http://design.byali.co.uk/
 
-Built using ZURB Foundation - MIT Licensed.
+Built using ZURB Foundation - MIT Licensed and Jekyll - MIT Licensed
